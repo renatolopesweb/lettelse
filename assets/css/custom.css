@@ -38,6 +38,31 @@
 .branding-border{
     border: 1px solid var(--color-primary)!important;
 }
+.btn-whatsapp {
+  background-color: #28D366 !important;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #20b356 !important;
+  animation: pulse-whatsapp 1.5s infinite;
+}
+
+@keyframes pulse-whatsapp {
+  0% {
+    box-shadow: 0 0 0 0 rgba(40, 211, 102, 0.6);
+    transform: scale(1);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(40, 211, 102, 0);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(40, 211, 102, 0);
+    transform: scale(1);
+  }
+}
+
 body{
     color: #4e4e4e;
 }
@@ -162,3 +187,66 @@ footer ul{
 
 /* FOOTER */
 
+/* CHATT */
+
+/* Botão WhatsApp */
+
+
+
+.chatt {
+  transform: translateY(120%);
+  position: relative;
+  width: 400px;
+  transition: transform 0.45s cubic-bezier(.22, 1, .36, 1);
+}
+
+/* BOTÃO */
+.js-open-chat {
+  transition:
+    transform 0.45s cubic-bezier(.4, 0, .2, 1),
+    opacity 0.3s ease;
+}
+
+.js-open-chat.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* CHAT */
+.chatt {
+  transform: translateY(120%);
+  transition: transform 0.45s cubic-bezier(.22, 1, .36, 1);
+  position: relative;
+}
+
+.chatt.is-open {
+  transform: translateY(0);
+}
+
+
+@media (max-width: 991.98px) {
+  .chatt {
+    width: 100%;
+  }
+}
+.chatt::before {
+  content: 'x';
+  width: 40px;
+  height: 40px;
+  background-color: #1c1c1c;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatt,
+.js-open-chat {
+  pointer-events: auto;
+}
+/* CHATT */
