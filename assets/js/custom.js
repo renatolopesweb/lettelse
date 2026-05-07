@@ -67,15 +67,31 @@ openButtons.forEach(btn => {
   });
 });
 
+
+
+
 // Fechar chat pelo X (pseudo-elemento)
 chat.addEventListener('click', (e) => {
   // ✅ ignora qualquer clique vindo do formulário
   if (e.target.closest('form')) return;
 
   const rect = chat.getBoundingClientRect();
-  const clickedOnClose =
-    e.clientX - rect.left < 40 &&
-    e.clientY - rect.top < 40;
+const clickX = e.clientX - rect.left;
+const clickY = e.clientY - rect.top;
+
+let clickedOnClose = false;
+
+// DESKTOP (botão no canto)
+if (window.innerWidth >= 992) {
+  clickedOnClose = clickX < 40 && clickY < 40;
+}
+// MOBILE (botão centralizado)
+else {
+  const centerX = rect.width / 2;
+  clickedOnClose =
+    Math.abs(clickX - centerX) < 20 && // metade do tamanho (40px)
+    clickY < 40;
+}
 
   if (clickedOnClose) {
     chat.classList.remove('is-open');
@@ -85,8 +101,6 @@ chat.addEventListener('click', (e) => {
     }, 220);
   }
 });
-
-
 /* =========================
    WHATSAPP
 ========================= */
@@ -98,48 +112,68 @@ document.querySelectorAll('.js-send-whatsapp').forEach(button => {
     e.preventDefault();
 
     const form = button.closest('form') || document;
-    const nameInput = form.querySelector('.js-chat-name');
     const topicSelect = form.querySelector('.js-chat-topic');
 
-    const name = nameInput?.value.trim();
     const topic = topicSelect?.value;
 
-    if (!name) {
-      alert('Por favor, informe seu nome.');
-      return;
-    }
-
+    // ✅ validação visual (sem alert)
     if (!topic) {
-      alert('Por favor, selecione um assunto.');
+      topicSelect.classList.add('is-invalid-select');
       return;
+    } else {
+      topicSelect.classList.remove('is-invalid-select');
     }
 
     let message = '';
 
-switch (topic) {
-  case 'Serviços':
-    message = `Olá, meu nome é ${name} e desejo mais informações sobre *Serviços*.`;
-    break;
-  case 'Terapias':
-    message = `Olá, meu nome é ${name} e desejo mais informações sobre *Terapias*.`;
-    break;
-  case 'Valores':
-    message = `Olá, meu nome é ${name} e desejo mais informações sobre *Valores*.`;
-    break;
-  default:
-    message = `Olá, meu nome é ${name} e gostaria de mais informações.`;
-}
+    switch (topic) {
+      case 'Serviços':
+        message = `Olá, desejo mais informações sobre *Serviços*.`;
+        break;
+
+      case 'Terapias':
+        message = `Olá, desejo mais informações sobre *Terapias*.`;
+        break;
+
+      case 'Valores':
+        message = `Olá, desejo mais informações sobre *Valores*.`;
+        break;
+
+      default:
+        message = `Olá, gostaria de mais informações.`;
+    }
 
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-    // ✅ fecha o chat ao enviar
+    // ✅ fecha o chat
     chat.classList.remove('is-open');
 
     setTimeout(() => {
       openButtons.forEach(b => b.classList.remove('is-hidden'));
     }, 220);
 
-    // ✅ abre WhatsApp em nova aba
+    // ✅ abre WhatsApp
     window.open(url, '_blank');
   });
 });
+
+const whatsapp = document.getElementById('mobile-whatsapp');
+
+if (whatsapp) {
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight;
+
+    const scrollBottom = scrollY + windowHeight;
+
+    // ✅ aparece depois de rolar um pouco (ex: 200px)
+    if (scrollY > 200 && scrollBottom < docHeight - 100) {
+      whatsapp.classList.remove('whatsapp-hidden');
+      whatsapp.classList.add('whatsapp-visible');
+    } else {
+      whatsapp.classList.remove('whatsapp-visible');
+      whatsapp.classList.add('whatsapp-hidden');
+    }
+  });
+}

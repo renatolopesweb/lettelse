@@ -22,13 +22,13 @@
         <div class="logo text-center py-5 mt-5 mt-lg-0">
             <a href="index.html"><img src="./assets/images/logo-lettelse.png" alt="Logo Lettelse"></a>
         </div>
-        <nav>
+        <nav class="z-5">
             <ul class="d-block d-lg-none fixed-top bg-white">
                 <button class="btn btn-sm px-3 py-4 lh-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-                    <i class="bi bi-list fs-4"></i>
+                    <i class="bi bi-list fs-2"></i>
                 </button>
 
-                <div class="offcanvas offcanvas-start" id="offcanvasNavbar">
+                <div class="offcanvas offcanvas-start z3" id="offcanvasNavbar">
                     <div class="offcanvas-header">
                         <button class="btn-close fs-6" data-bs-dismiss="offcanvas"></button>
                     </div>
@@ -47,12 +47,18 @@
                                 <a class="nav-link" href="nossas-terapias.html">Nossas Terapias</a>
                             </li>
                             <li class="nav-item mb-3" data-bs-dismiss="offcanvas">
-                                <a class="nav-link" href="terapias-para-pets.html">Terapias para Pets</a>
+                                <a class="nav-link" href="terapia-para-pets.html">Terapias para Pets</a>
                             </li>
                             <li class="nav-item mb-3" data-bs-dismiss="offcanvas">
                                 <a class="nav-link" href="contato.html">Contato</a>
                             </li>
                         </ul>
+
+                    <div class="d-lg-inline-grid text-center mt-2">
+                        <button type="button" data-bs-dismiss="offcanvas" class="bg-transparent border-0 fs-1">
+                            <i class="bi bi-arrow-left"></i>
+                        </button>
+                        </div>
                     </div>
                 </div>
             </ul>
@@ -73,9 +79,8 @@
       rgb(0, 4, 3)      /* #0A2622 com transparência */
     ),url(./assets/images/home-leadspace-bg.jpg);">
         <div>
-            <h1 class="fs-3">Experiências terapêuticas e planos personalizados para cuidar do corpo, regular emoções e
-                restaurar o equilíbrio.</h1>
-            <button type="button" class="btn btn-light">Saiba Mais <i class="bi bi-arrow-right"></i></button>
+            <h1 class="fs-3">Experiências terapêuticas e planos personalizados para cuidar do corpo, regular emoções e restaurar o equilíbrio.</h1>
+            <a href="quem-somos.html" class="btn btn-light">Saiba Mais <i class="bi bi-arrow-right"></i></a>
         </div>
     </section>
 
@@ -93,34 +98,37 @@
                 <div class="col-lg-7 p-4 order-lg-1">
                     <p>
                         No Centro Terapêutico <span class="branding-color-primary"><strong>Lettelse</strong></span>,
-                        acreditamos que sintomas não surgem por acaso. Carregam histórias, emoções, sobrecargas e
-                        conflitos que o corpo não consegue silenciar.
+                        o cuidado pode começar de duas formas:
                     </p>
-                    <h3 class="fs-6 fw-bold mt-5">Aqui você tem cuidados nos sintomas, especialmente se você:</h3>
-                    <ul>
+                        <p>- <strong>Experiências terapêuticas</strong> de 50 minutos voltadas para necessidades como ansiedade, sobrecarga, fadiga, desânimo, reconexão e equilíbrio</p>
+                        <p>- <strong>Planos terapêuticos personalizados</strong>, para quem deseja um acompanhamento mais profundo e individualizado</p>
+                    <p>
+                        Acreditamos que sintomas não surgem por acaso. Eles podem expressar sobrecargas físicas, emocionais e energéticas que merecem ser escutadas.
+                    </p>
+                    <p>
+                        Aqui o cuidado busca tanto aliviar o que você sente hoje quanto sustentar um reequilíbrio mais profundo, especialmente se você:
+                    </p>
+
+                        <ul>
                         <li>Sente dores recorrentes</li>
-                        <li>Lida com ansiedade ou tristeza</li>
-                        <li>Vive cansado</li>
-                        <li>Sente que “dá conta de tudo”, mas está esgotado</li>
-                        <li>Quer mais do que remédios para se sentir bem</li>
+                        <li>Vive sob tensão ou ansiedade</li>
+                        <li>Está desanimado ou sem vontades</li>
+                        <li>Sente cansaço constante</li>
+                        <li>Entrega-se muito e recebe pouco</li>
+                        <li>Busca mais do que apenas melhorar sintomas</li>
                     </ul>
 
-                    <h3 class="fs-6 fw-bold mt-5">Nossos atendimentos são baseados em:</h3>
+                    <h3 class="fs-6 fw-bold mt-5">Nosso trabalho integra:</h3>
                     <ul class="check-2">
-                        <li><i class="bi bi-check branding-color-primary"></i> Escuta e análise profunda das queixas e
-                            sintomas</li>
-                        <li><i class="bi bi-check branding-color-primary"></i> Leitura energética e emocional do quadro
-                            geral</li>
-                        <li><i class="bi bi-check branding-color-primary"></i> Fundamentação dos sintomas em Medicina
-                            Tradicional Chinesa, Ayurveda, Metafísica da Saúde, Psicossomática, Antroposofia e Análise
-                            Bioenergética</li>
-                        <li><i class="bi bi-check branding-color-primary"></i> Plano terapêutico integrativo</li>
-                        <li><i class="bi bi-check branding-color-primary"></i> Acompanhamento e reequilíbrio</li>
+                        <li><i class="bi bi-check branding-color-primary"></i> Escuta e leitura do seu momento atual</li>
+                        <li><i class="bi bi-check branding-color-primary"></i> Experiências ou planos definidos conforme sua necessidade</li>
+                        <li><i class="bi bi-check branding-color-primary"></i> Abordagens integrativas para corpo, emoções e energia</li>
+                        <li><i class="bi bi-check branding-color-primary"></i> Cuidado personalizado e continuidade quando necessário</li>
                     </ul>
 <div class="d-grid gap-3 d-lg-inline-grid">
-  <button type="button" class="btn btn-primary">
-    Saiba mais <i class="bi bi-arrow-right"></i>
-  </button>
+  <a href="nossos-servicos.html" class="btn btn-primary">
+    Conheça Nossos Serviços <i class="bi bi-arrow-right"></i>
+  </a>
 
   <button type="button" class="btn btn-secondary">
     Agendar minha primeira sessão <i class="bi bi-whatsapp"></i>
@@ -271,10 +279,10 @@
             <div class="col">
                 <h2 class="fs-6 fw-bold text-uppercase">Mapa do site</h2>
                 <ul>
-                    <li><a href="" style="color: inherit;">Quem Somos</a></li>
-                    <li><a href="" style="color: inherit;">Nossos Serviços</a></li>
-                    <li><a href="" style="color: inherit;">Nossas Terapias</a></li>
-                    <li><a href="" style="color: inherit;">Terapias para Pets</a></li>
+                    <li><a href="quem-somos.html" style="color: inherit;">Quem Somos</a></li>
+                    <li><a href="nossos-servicos.html" style="color: inherit;">Nossos Serviços</a></li>
+                    <li><a href="nossas-terapias.html" style="color: inherit;">Nossas Terapias</a></li>
+                    <li><a href="terapia-para-pets.html" style="color: inherit;">Terapias para Pets</a></li>
                 </ul>
             </div>
 
@@ -352,12 +360,6 @@
     <div class="shadow-lg rounded-5 p-5 bg-white chatt">
         <h5 class="fs-6">Whatsapp Lettelse</h5>
         <form>
-           <input
-  type="text"
-  class="form-control rounded mt-3 mb-3 fs-6 js-chat-name"
-  placeholder="Nome:"
->
-
 <select class="form-select form-select-sm rounded py-2 fs-6 js-chat-topic">
   <option value="">Quero informações sobre:</option>
   <option value="Serviços">Serviços</option>
@@ -366,12 +368,16 @@
   <option value="Outro">Outro</option>
 </select>
 
+<div class="d-grid gap-3">
+<div class="d-grid gap-3">
 <a
   href="#"
   class="btn fw-bold rounded px-4 mt-3 py-2 text-white btn-whatsapp jp js-send-whatsapp"
 >
-  <i class="bi bi-whatsapp fs-5"></i> Enviar para WhatsApp
+  Enviar para WhatsApp <i class="bi bi-whatsapp fs-5"></i>
 </a>
+</div>
+</div>
     <p class="fs-7 lh-sm mt-4 text-black-50 mb-lg-0">Ao clicar no botão do WhatsApp, você será direcionado para a plataforma em uma nova aba. Nenhuma informação pessoal ou sensível é coletada pelo site, em conformidade com a Lei Geral de Proteção de Dados (LGPD); a comunicação ocorre exclusivamente dentro do WhatsApp.</p>
         </form>
     </div>
@@ -382,13 +388,13 @@
 
 
 <!-- MOBILE -->
-<div class="fixed-bottom d-block d-lg-none mb-3 px-3">
+<div class="fixed-bottom d-block d-lg-none mb-3 px-3 whatsapp-hidden" id="mobile-whatsapp">
   <div class="d-grid">
     <button
       type="button"
-      class="btn fw-bold rounded px-4 py-2 text-white btn-whatsapp js-open-chat"
+      class="btn fw-bold rounded px-4 py-3 text-white btn-whatsapp js-open-chat"
     >
-      <i class="bi bi-whatsapp fs-5"></i> Mensagem WhatsApp
+      Mensagem WhatsApp <i class="bi bi-whatsapp fs-5"></i>
     </button>
   </div>
 </div>
