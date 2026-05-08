@@ -71,3 +71,7 @@
 .accordion-item {
   scroll-margin-top: 80px;
 }
+
+.table-striped>tbody>tr:nth-of-type(odd)>*{
+  background-color: var(--color-primary-2) !important;
+}

@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+<div id="progress-bar"></div>
     <header>
         <div class="logo text-center py-5 mt-5 mt-lg-0">
             <a href="index.html"><img src="./assets/images/logo-lettelse.png" alt="Logo Lettelse"></a>
@@ -25,7 +25,7 @@
         <nav>
             <ul class="d-block d-lg-none fixed-top bg-white">
                 <button class="btn btn-sm px-3 py-4 lh-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-                    <i class="bi bi-list fs-4"></i>
+                    <i class="bi bi-list fs-2"></i>
                 </button>
 
                 <div class="offcanvas offcanvas-start" id="offcanvasNavbar">
@@ -53,6 +53,10 @@
                                 <a class="nav-link" href="contato.html">Contato</a>
                             </li>
                         </ul>
+                                            <div class="d-lg-inline-grid text-center mt-2">
+                        <button type="button" data-bs-dismiss="offcanvas" class="btn-close bg-transparent border-0 fs-6">
+                        </button>
+                        </div>
                     </div>
                 </div>
             </ul>
@@ -79,7 +83,7 @@
 <p>O Centro Terapêutico <strong class="branding-color-primary">Lettelse</strong> é um espaço que oferece terapias holísticas, integrativas e complementares em saúde física, mental e emocional.</p>
 <p>Nós nos dedicamos a quem quer acabar com sintomas, compreender seus motivos e eliminar o foco, encontrando o alívio de que precisa para transformar seu momento de vida com mais leveza.</p>
 <p>Unimos ciência e saberes milenares para criar um plano terapêutico profundo, personalizado e transformador, seja em apenas uma ou em mais sessões.</p>
-<p>Nossas abordagens englobam metafísica dos sintomas, psicossomática, Medicina Tradicional Chinesa, Ayurveda e terapias corporais e energéticas.</p>
+<p>Nossas abordagens englobam metafísica dos sintomas, psicossomática, Medicina Tradicional Chinesa e terapias corporais e energéticas.</p>
 <p>Oferecemos experiências de cuidado e planos terapêuticos personalizados para apoiar o equilíbrio do corpo, das emoções e do sistema nervoso, promovendo alívio, vitalidade e bem-estar profundo.
 <div class="d-grid gap-3 d-lg-inline-grid">
   <button type="button" class="btn btn-primary">
@@ -116,7 +120,6 @@
                     <img src="./assets/images/priscila-mazzo.jpg" class="img-fluid rounded" alt="xxxxxxx">
                     <div class="mt-4 text-center">
                         <span class="badge branding-bg-primary-2 branding-color-primary-4 px-4 py-3 m-1">Medicina Chinesa</span>
-                        <span class="badge branding-bg-primary-2 branding-color-primary-4 px-4 py-3 m-1">Ayurveda</span>
                         <span class="badge branding-bg-primary-2 branding-color-primary-4 px-4 py-3 m-1">Massoterapia</span>
                         <span class="badge branding-bg-primary-2 branding-color-primary-4 px-4 py-3 m-1">Psicossomática</span>
                         <span class="badge branding-bg-primary-2 branding-color-primary-4 px-4 py-3 m-1">Biomagnetismo</span>
@@ -135,11 +138,11 @@
                    <p>Comunicóloga (<strong>Universidade Metodista</strong>) especializada em corporações, com ênfase em projetos voltados ao bem-estar e à satisfação de funcionários com seu trabalho em linha com seus valores pessoais, respeitando sua saúde física e mental</p>
 <p>Pós-graduada em Marketing (<strong>USP</strong>) com destaque para projetos de saúde individualizada, considerando que cada ser é único e seu cuidado também deve ser.</p>
 
-<p>Pós-graduada em Terapias Holísticas, Integrativas e Complementares em Saúde (<strong>Faculdade Terceira Visão</strong>) com foco em Medicina Tradicional Chinesa, Terapia Ayurveda e Psicossomática.</p>
+<p>Pós-graduada em Terapias Holísticas, Integrativas e Complementares em Saúde (<strong>Faculdade Terceira Visão</strong>) com foco em Medicina Tradicional Chinesa e Psicossomática.</p>
 
 <p>Especializada em Biomagnetismo Medicinal e Emocional (<strong>Instituto Francisco Kessler</strong>), em Naturopatia (<strong>IBTerapias</strong>) e Massoterapia (<strong>Instituto Massoterapia e Cuidados</strong>).</p>
 
-<p>Fundadora do Centro Terapêutico <strong class="branding-color-primary">Lettelse</strong> , destinado a cuidar muito além dos sintomas: tratar a sua origem.</p>
+<p>Fundadora do Centro Terapêutico <strong class="branding-color-primary">Lettelse</strong>, destinado a cuidar muito além dos sintomas: tratar a sua origem.</p>
 </div>
                 </div>
             </div>
@@ -164,7 +167,7 @@
         </div>
     </section>
 
-    <footer class="container mt-5 pt-5 pb-5 d-none d-lg-block">
+    <footer class="container mt-5 pt-5 pb-5 d-none d-lg-block"> 
         <div class="row pb-4">
             <div class="col">
                 <a href=""><img src="./assets/images/logo-lettelse.png" alt="Logo Lettelse" style="width: 200px;"></a>
@@ -240,7 +243,6 @@
         </div>
     </footer>
 
-
     <!-- CHATT -->
 
 <div class="
@@ -268,7 +270,7 @@
     <div class="shadow-lg rounded-5 p-5 bg-white chatt">
         <h5 class="fs-6">Whatsapp Lettelse</h5>
         <form>
-           <select class="form-select form-select-sm rounded py-2 fs-6 js-chat-topic">
+<select class="form-select form-select-sm rounded py-2 fs-6 js-chat-topic">
   <option value="">Quero informações sobre:</option>
   <option value="Serviços">Serviços</option>
   <option value="Terapias">Terapias</option>
@@ -277,12 +279,14 @@
 </select>
 
 <div class="d-grid gap-3">
+<div class="d-grid gap-3">
 <a
   href="#"
   class="btn fw-bold rounded px-4 mt-3 py-2 text-white btn-whatsapp jp js-send-whatsapp"
 >
   Enviar para WhatsApp <i class="bi bi-whatsapp fs-5"></i>
 </a>
+</div>
 </div>
     <p class="fs-7 lh-sm mt-4 text-black-50 mb-lg-0">Ao clicar no botão do WhatsApp, você será direcionado para a plataforma em uma nova aba. Nenhuma informação pessoal ou sensível é coletada pelo site, em conformidade com a Lei Geral de Proteção de Dados (LGPD); a comunicação ocorre exclusivamente dentro do WhatsApp.</p>
         </form>
@@ -295,8 +299,8 @@
 
 <!-- MOBILE -->
 <div class="fixed-bottom d-block d-lg-none mb-3 px-3">
-  <div class="d-grid">
-    <button
+  <div class="d-grid" id="mobile-whatsapp">
+    <button 
       type="button"
       class="btn fw-bold rounded px-4 py-3 text-white btn-whatsapp js-open-chat"
     >
@@ -306,7 +310,7 @@
 </div>
 
 <!-- DESKTOP -->
-<div class="fixed-bottom d-none d-lg-flex justify-content-end mb-4 pe-5 z-1">
+<div class="position-fixed bottom-0 end-0 d-none d-lg-flex mb-4 pe-5 z-1">
   <button
     type="button" 
     class="btn fw-bold rounded-pill px-4 py-3 mx-5 text-white btn-whatsapp js-open-chat"

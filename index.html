@@ -17,6 +17,7 @@
 </head>
 
 <body>
+<div id="progress-bar"></div>
 
     <header>
         <div class="logo text-center py-5 mt-5 mt-lg-0">
@@ -55,8 +56,7 @@
                         </ul>
 
                     <div class="d-lg-inline-grid text-center mt-2">
-                        <button type="button" data-bs-dismiss="offcanvas" class="bg-transparent border-0 fs-1">
-                            <i class="bi bi-arrow-left"></i>
+                        <button type="button" data-bs-dismiss="offcanvas" class="btn-close bg-transparent border-0 fs-6">
                         </button>
                         </div>
                     </div>
@@ -119,11 +119,11 @@
                     </ul>
 
                     <h3 class="fs-6 fw-bold mt-5">Nosso trabalho integra:</h3>
-                    <ul class="check-2">
-                        <li><i class="bi bi-check branding-color-primary"></i> Escuta e leitura do seu momento atual</li>
-                        <li><i class="bi bi-check branding-color-primary"></i> Experiências ou planos definidos conforme sua necessidade</li>
-                        <li><i class="bi bi-check branding-color-primary"></i> Abordagens integrativas para corpo, emoções e energia</li>
-                        <li><i class="bi bi-check branding-color-primary"></i> Cuidado personalizado e continuidade quando necessário</li>
+                    <ul>
+                        <li>Escuta e leitura do seu momento atual</li>
+                        <li>Experiências ou planos definidos conforme sua necessidade</li>
+                        <li>Abordagens integrativas para corpo, emoções e energia</li>
+                        <li>Cuidado personalizado e continuidade quando necessário</li>
                     </ul>
 <div class="d-grid gap-3 d-lg-inline-grid">
   <a href="nossos-servicos.html" class="btn btn-primary">
@@ -150,7 +150,7 @@
                 <div class="row home-abordagens-list">
                     <div class="col-lg m-2 p-4 rounded-2"><i class="bi bi-chevron-right"></i> Medicina Tradicional
                         Chinesa</div>
-                    <div class="col-lg m-2 p-4 rounded-2"><i class="bi bi-chevron-right"></i> Ayurveda</div>
+                    <div class="col-lg m-2 p-4 rounded-2"><i class="bi bi-chevron-right"></i> MTC</div>
                     <div class="col-lg m-2 p-4 rounded-2"><i class="bi bi-chevron-right"></i> Naturopatia</div>
                 </div>
 
@@ -257,7 +257,7 @@
         </div>
     </section>
 
-    <footer class="container mt-5 pt-5 pb-5 d-none d-lg-block">
+    <footer class="container mt-5 pt-5 pb-5 d-none d-lg-block"> 
         <div class="row pb-4">
             <div class="col">
                 <a href=""><img src="./assets/images/logo-lettelse.png" alt="Logo Lettelse" style="width: 200px;"></a>
@@ -385,12 +385,10 @@
 </div>
 
 
-
-
 <!-- MOBILE -->
-<div class="fixed-bottom d-block d-lg-none mb-3 px-3 whatsapp-hidden" id="mobile-whatsapp">
-  <div class="d-grid">
-    <button
+<div class="fixed-bottom d-block d-lg-none mb-3 px-3">
+  <div class="d-grid" id="mobile-whatsapp">
+    <button 
       type="button"
       class="btn fw-bold rounded px-4 py-3 text-white btn-whatsapp js-open-chat"
     >

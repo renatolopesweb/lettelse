@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+<div id="progress-bar"></div>
     <header>
         <div class="logo text-center py-5 mt-5 mt-lg-0">
             <a href="index.html"><img src="./assets/images/logo-lettelse.png" alt="Logo Lettelse"></a>
@@ -25,7 +25,7 @@
         <nav>
             <ul class="d-block d-lg-none fixed-top bg-white">
                 <button class="btn btn-sm px-3 py-4 lh-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-                    <i class="bi bi-list fs-4"></i>
+                    <i class="bi bi-list fs-2"></i>
                 </button>
 
                 <div class="offcanvas offcanvas-start" id="offcanvasNavbar">
@@ -53,6 +53,10 @@
                                 <a class="nav-link" href="contato.html">Contato</a>
                             </li>
                         </ul>
+                                            <div class="d-lg-inline-grid text-center mt-2">
+                        <button type="button" data-bs-dismiss="offcanvas" class="btn-close bg-transparent border-0 fs-6">
+                        </button>
+                        </div>
                     </div>
                 </div>
             </ul>
@@ -80,7 +84,7 @@
                         Assim como os seres humanos, os animais também podem manifestar estresse, medos e desequilíbrios energéticos que influenciam em seu comportamento e bem-estar. As terapias integrativas podem auxiliar no reequilíbrio emocional e energético dos pets, contribuindo para mais tranquilidade e qualidade de vida.
                     </p>
                     <p>
-                        No Lettelse, utilizamos abordagens terapêuticas suaves e adaptadas à sensibilidade dos animais que podem auxiliar em situações como:
+                        No <strong class="branding-color-primary">Lettelse</strong>, utilizamos abordagens terapêuticas suaves e adaptadas à sensibilidade dos animais que podem auxiliar em situações como:
                     </p>
                     <ul>
                         <li>Ansiedade e agitação</li>
@@ -243,11 +247,10 @@
 
 
 
-
 <!-- MOBILE -->
 <div class="fixed-bottom d-block d-lg-none mb-3 px-3">
-  <div class="d-grid">
-    <button
+  <div class="d-grid" id="mobile-whatsapp">
+    <button 
       type="button"
       class="btn fw-bold rounded px-4 py-3 text-white btn-whatsapp js-open-chat"
     >
@@ -257,7 +260,7 @@
 </div>
 
 <!-- DESKTOP -->
-<div class="fixed-bottom d-none d-lg-flex justify-content-end mb-4 pe-5 z-1">
+<div class="position-fixed bottom-0 end-0 d-none d-lg-flex mb-4 pe-5 z-1">
   <button
     type="button" 
     class="btn fw-bold rounded-pill px-4 py-3 mx-5 text-white btn-whatsapp js-open-chat"

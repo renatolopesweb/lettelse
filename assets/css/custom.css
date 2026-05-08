@@ -36,6 +36,12 @@
 .branding-bg-primary-3{
     background-color: var(--color-primary-3);
 }
+.branding-bg-primary-4{
+    background-color: var(--color-primary-4);
+}
+.branding-bg-primary-5{
+    background-color: var(--color-primary-5);
+}
 .branding-bg-primary-7{
     background-color: var(--color-primary-7);
 }
@@ -142,7 +148,7 @@ nav a:hover{
 .highlight-section div{
     color: #fffffff7;
     margin: auto;
-    max-width: 660px;
+    max-width: 550px;
     padding: 0 1rem;
     text-align: center;
 }
@@ -281,3 +287,13 @@ footer ul{
   border: 2px solid #da1e28 !important;
 }
 /* CHATT */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0%;
+  background-color: #91DACA;
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+}
