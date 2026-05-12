@@ -191,8 +191,11 @@ footer ul{
     list-style-type: none;
     margin: 0!important;
 }
+.credit{
+  background-color: var(--color-primary-7);
+}
 .credit p{
-    opacity: .7;
+    opacity: .5;
 }
 
 /* FOOTER */
@@ -224,6 +227,7 @@ footer ul{
   transform: translateY(120%);
   position: relative;
   width: 400px;
+  background: url(../images/whatsapp-bg.jpg);
   transition: transform 0.45s cubic-bezier(.22, 1, .36, 1);
 }
 
@@ -291,7 +295,7 @@ footer ul{
   position: fixed;
   top: 0;
   left: 0;
-  height: 5px;
+  height: 4px;
   width: 0%;
   background-color: #91DACA;
   z-index: 9999;
