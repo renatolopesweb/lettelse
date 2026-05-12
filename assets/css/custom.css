@@ -183,8 +183,11 @@ nav a:hover{
 /* HOME */
 
 /* FOOTER */
-footer, .credit {
+footer{
   font-size: 0.875rem; /* equivalente a ~14px */
+}
+.credit {
+  font-size: 0.8rem!important;
 }
 
 footer ul{
@@ -195,7 +198,7 @@ footer ul{
   background-color: var(--color-primary-7);
 }
 .credit p{
-    opacity: .5;
+    opacity: .7;
 }
 
 /* FOOTER */
