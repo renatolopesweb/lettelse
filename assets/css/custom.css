@@ -230,7 +230,6 @@ footer ul{
   transform: translateY(120%);
   position: relative;
   width: 400px;
-  background: url(../images/whatsapp-bg.jpg);
   transition: transform 0.45s cubic-bezier(.22, 1, .36, 1);
 }
 
